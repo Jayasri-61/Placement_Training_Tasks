@@ -1,0 +1,19 @@
+package Guvi;
+import java.util.Scanner;
+public class DiscountCalculator {
+   public static void main(String[] str) {
+	   int bill,price = 0;
+	   Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter bill amount: ");
+	   bill = sc.nextInt();
+	   if(bill>=5000) {
+		   price=(bill*20/100)-price;
+		   System.out.println(price);
+	   }else if(bill>=2000) {
+		   price=(bill*10/100)-price;
+		   System.out.println(price);
+	   }else {
+		   System.out.println("No Discount");
+	   }
+   }
+}
