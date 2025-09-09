@@ -1,0 +1,19 @@
+package Guvi;
+import java.util.Scanner;
+public class Digit {
+	public static void main(String[] str) {
+		int num;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number: ");
+		num=sc.nextInt();
+		if(num<10) {
+			System.out.println("Single digit number");
+		}else if(num<100) {
+			System.out.println("Two digit number");
+		}else if(num<1000){
+			System.out.println("Three digit number");
+		}else {
+			System.out.println("Out of range");
+		}
+	}   
+}
