@@ -1,0 +1,21 @@
+package Guvi;
+import java.util.Scanner;
+public class TriangleTypes {
+    public static void main(String[] str) {
+    	int x,y,z;
+    	Scanner sc  =new Scanner(System.in);
+    	System.out.println("Enter value of x: ");
+    	x=sc.nextInt();
+    	System.out.println("Enter value of y: ");
+    	y=sc.nextInt();
+    	System.out.println("Enter value of z: ");
+    	z=sc.nextInt();
+    	if(x==y&&y==z) {
+    		System.out.println("Equilateral Triangle");
+    	}else if(x==y||y==z||x==z) {
+    		System.out.println("Isoceles Triangle");
+    	}else {
+    		System.out.println("Scalene Triangle");
+    	}
+    }
+}
