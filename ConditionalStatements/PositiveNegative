@@ -1,0 +1,17 @@
+package Guvi;
+import java.util.Scanner;
+public class PositiveNegative {
+   public static void main(String[] str) {
+	   int number;
+	   Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter the number: ");
+	   number = sc.nextInt();	  
+	   if(number>0) {
+		   System.out.println(number+ " is positive Number");
+	   }else if(number<0) {
+		   System.out.println(number+ " is negative Number");
+	   }else {
+		   System.out.println("Number is zero");
+	   }
+   }
+}
