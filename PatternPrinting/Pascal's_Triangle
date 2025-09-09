@@ -1,0 +1,18 @@
+package loopingstructure;
+import java.util.Scanner;
+public class PascalsTriangle {
+    public static void main(String[] str) {
+    	int x,y,z;
+    	Scanner sc=new Scanner(System.in);
+    	System.out.println("Limit: ");
+    	z=sc.nextInt();
+    	for(x=0;x<z;x++) {
+    		int num=1;
+    		for(y=0;y<=x;y++) {
+    			System.out.print(num+" ");
+    			num=num*(x-y)/(y+1);   			
+    		}
+    		System.out.println();
+    	}
+    }
+}
