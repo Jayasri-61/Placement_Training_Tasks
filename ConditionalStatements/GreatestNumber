@@ -1,0 +1,19 @@
+package Guvi;
+import java.util.Scanner;
+public class GreatestNumber {
+      public static void main(String[] str) {
+    	  int m,n;
+    	  Scanner sc=new Scanner(System.in);
+    	  System.out.println("Enter value of m: ");
+    	  m=sc.nextInt();
+    	  System.out.println("Enter value of n: ");
+    	  n=sc.nextInt();
+    	  if(m>n) {
+    		  System.out.println(m+ " is Greatest");
+    	  }else if(m<n){
+    		  System.out.println(n+ " is Greatest ");
+    	  }else {
+    		  System.out.println("Both are equal");
+    	  }
+      }
+}
