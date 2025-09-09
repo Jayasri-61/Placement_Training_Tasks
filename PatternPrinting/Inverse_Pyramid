@@ -1,0 +1,19 @@
+package loopingstructure;
+import java.util.Scanner;
+public class Pyramid {
+	public static void main(String[] str) {
+		int x,y,z;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Limit: ");
+		z=sc.nextInt();
+		for(x=z;x>=1;x--) {
+			for(y=1;y<=z-x;y++) {
+				System.out.print(" ");
+			}
+			for(y=1;y<=(2*x-1);y++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
