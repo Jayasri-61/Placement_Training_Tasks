@@ -1,0 +1,20 @@
+package loopingstructure;
+import java.util.Scanner;
+public class HollowSquare {	
+		    public static void main(String[] str) {
+	    	int x,y,z;
+	    	Scanner sc=new Scanner(System.in);
+	    	System.out.println("Limit: ");
+	    	z=sc.nextInt();
+	    	for(x=1;x<=z;x++) {
+	    		for(y=1;y<=z;y++) {	    			
+	    				if(x==1||x==z||y==1||y==z){
+	    					System.out.print(" * ");
+	    				}else {	
+	    				System.out.print("   ");
+	    		}    	
+	    		}
+	    		System.out.println();
+	    	}
+	    }
+	}
