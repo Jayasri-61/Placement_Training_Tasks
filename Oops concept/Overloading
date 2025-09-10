@@ -1,0 +1,20 @@
+package day3;
+
+public class Overloading {
+	public static void main(String[] str) {
+		Overloading obj=new Overloading();
+		obj.add(3, 4);
+		obj.add(3, " Times");	
+		obj.add("Hii", " Hello");	
+	}
+      void add(int a,int b) {
+	    int tot = a+b;
+	    System.out.println(tot);
+}
+      void add(int x,String y) {
+	    System.out.println(x+y);
+}
+      void add(String m,String n) {
+    	  System.out.println(m+n);
+      }
+}
