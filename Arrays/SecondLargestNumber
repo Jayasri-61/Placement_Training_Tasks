@@ -1,0 +1,20 @@
+package arrays;
+import java.util.*;
+public class SecondLargest {
+	public static void main(String[] str) {
+		int[] num= {23,34,56,67};
+		int FirstLargest=Integer.MIN_VALUE;
+		int SecondLargest=Integer.MAX_VALUE;
+		for(int i=0;i<num.length;i++) {
+				if(num[i]>FirstLargest) {
+					SecondLargest=FirstLargest;
+					FirstLargest=num[i];
+					if(num[i]!=FirstLargest&&num[i]<SecondLargest) {
+						SecondLargest=num[i];
+					}
+			}			
+		}
+		System.out.println(FirstLargest);
+		System.out.println(SecondLargest);
+	}
+}
