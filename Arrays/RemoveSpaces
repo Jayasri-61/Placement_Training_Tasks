@@ -1,0 +1,12 @@
+package arrays;
+public class RemoveWhiteSpace {
+	public static void main(String[] str) {
+		String arr= " Hello World ";
+		char[] words= arr.toCharArray();
+		for(char c: words) {
+			if(c!=' '){
+				System.out.print(c);			
+			}
+		}
+	}
+}
