@@ -1,6 +1,6 @@
 package arrays;
 import java.util.*;
-public class SubArray {
+public class TwoSum {
 	public static void main(String[] str) {
 		int[] arr= {2,3,4,1,7,6};
 		int k=5;
