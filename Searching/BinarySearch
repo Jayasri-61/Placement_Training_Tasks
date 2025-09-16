@@ -1,0 +1,28 @@
+package search;
+public class BinarySearch{
+	public static int binarysearch(int[] arr,int target) {
+		int left=0;
+		int right=arr.length-1;
+		while(left<=right) {
+			int mid=left+(right-left/2);
+			if(arr[mid]==target) {
+				return mid;
+			}else if(mid<target) {
+				left=mid+1;
+			}else {
+				right=mid-1;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[] str) {
+		int[] arr= {3,5,6,7,8};
+		int target=5;
+		int res=(binarysearch(arr,target));
+		if(res==-1) {
+			System.out.println("Element not found");
+		}else {
+			System.out.println("Element "+target+" found at index["+res+"]");
+		}		
+	}
+}
