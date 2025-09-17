@@ -1,0 +1,27 @@
+package arraylist;
+
+import java.util.*;
+
+public class Target {
+	public static int compare(ArrayList<Integer> arr, int target) {
+		int index = 0;
+		for (int i = 0; i < arr.size(); i++) {
+			if (arr.get(i) == target) {
+				index = i;
+				return index;
+			}
+		}
+		return -1;
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Integer> arr = new ArrayList<>();
+		int target = 60;
+		arr.add(20);
+		arr.add(30);
+		arr.add(26);
+		arr.add(29);
+		arr.add(60);
+		System.out.println(compare(arr, target));
+	}
+}
