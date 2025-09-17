@@ -1,0 +1,22 @@
+package arraylist;
+
+import java.util.*;
+
+public class Sum {
+	public static void add(ArrayList<Integer> arr) {
+		int tot = 0;
+		for (int i : arr) {
+			tot += i;
+		}
+		System.out.println(tot);
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(3);
+		arr.add(5);
+		arr.add(7);
+		arr.add(8);
+		add(arr);
+	}
+}
