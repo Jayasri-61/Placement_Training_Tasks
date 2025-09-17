@@ -1,0 +1,45 @@
+package arraylist;
+
+import java.util.*;
+
+public class List {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(4);
+		arr.add(2);
+		arr.add(6);
+		arr.add(7);
+		System.out.println(arr);
+		arr.set(1, 0);
+		System.out.println(arr);
+		System.out.println(arr.get(0));
+		System.out.println(arr.contains(7));
+		Collections.sort(arr);
+		System.out.println(arr);
+		Collections.reverse(arr);
+		System.out.println(arr);
+		System.out.println(arr.size());
+		System.out.println(arr.isEmpty());
+		System.out.println(arr.indexOf(4));
+		System.out.println(arr.lastIndexOf(0));
+		System.out.println(arr.hashCode());
+		for (int i : arr) {
+			System.out.println(i);
+		}
+		for (int i = 0; i < arr.size(); i++) {
+			System.out.println(arr.get(i));
+		}
+		Integer[] arr1 = arr.toArray(new Integer[3]);
+		System.out.println(arr.toString());
+		ArrayList<Integer> copy = (ArrayList<Integer>) 
+		arr.clone();
+		System.out.println(copy);
+		arr.addAll(copy);
+		System.out.println(arr);
+		arr.remove(3);
+		System.out.println(arr);
+		arr.clear();
+		System.out.println(arr);
+	}
+}
