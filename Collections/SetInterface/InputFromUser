@@ -1,0 +1,31 @@
+package set;
+
+import java.util.*;
+
+public class UserInput {
+	public static void strfunc() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size: ");
+		int size = sc.nextInt();
+		ArrayList<String> st = new ArrayList<>();
+		for (int i = 0; i < size; i++) {
+			String input = sc.next();
+			st.add(input);
+		}
+		System.out.println(st);
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size: ");
+		int size = sc.nextInt();
+		ArrayList<Integer> arr = new ArrayList<>();
+		for (int i = 0; i < size; i++) {
+			int input = sc.nextInt();
+			arr.add(input);
+		}
+		System.out.println(arr);
+		strfunc();
+	}
+
+}
