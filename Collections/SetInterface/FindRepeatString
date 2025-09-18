@@ -1,0 +1,24 @@
+package set;
+
+import java.util.*;
+
+public class Repeat {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter input: ");
+		String input = sc.next();
+		char[] c = input.toCharArray();
+		HashSet<Character> set = new HashSet<>();
+		HashSet<Character> res = new HashSet<>();
+		int count = 0;
+		for (char ch : c) {
+			if (!set.add(ch)) {
+				res.add(ch);
+				count++;
+			}
+		}
+		System.out.println("Total count:" + (c.length));
+		System.out.println("Repeated character: " + res);
+		System.out.println("Repeated character count:" + count);
+	}
+}
