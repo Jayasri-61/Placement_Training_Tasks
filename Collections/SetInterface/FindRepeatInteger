@@ -1,0 +1,27 @@
+package set;
+
+import java.util.*;
+
+public class FindRepeat {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size: ");
+		int size = sc.nextInt();
+		ArrayList<Integer> arr = new ArrayList<>();
+		for (int i = 0; i < size; i++) {
+			int input = sc.nextInt();
+			arr.add(input);
+		}
+		HashSet<Integer> set = new HashSet<>();
+		HashSet<Integer> res = new HashSet<>();
+		for (int j : arr) {
+			if (!set.add(j)) {
+				res.add(j);
+			}
+		}
+		System.out.println("ArrayList count:" + (arr.size()));
+		System.out.println("Set count:" + (set.size()));
+		System.out.println("Repeated: " + res);
+
+	}
+}
