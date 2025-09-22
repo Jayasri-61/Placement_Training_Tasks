@@ -1,0 +1,31 @@
+package map;
+import java.util.*;
+public class Map {
+	public static void main(String[] args) {
+		HashMap<Integer,String> map=new HashMap<>();
+        map.put(1, "School");
+        map.put(11, "Student");
+        map.put(21, "Staff");
+        map.put(13, "College");
+        map.put(31, "Professor");
+        HashMap<Integer,String> maps=new HashMap<>();
+        maps.put(1, "School");
+        maps.put(11, "Student");
+        maps.put(21, "Staff");
+        maps.put(13, "College");
+        System.out.println(map);
+        System.out.println(map.size());
+        System.out.println(map.keySet());
+        System.out.println(map.values());
+        System.out.println(map.containsKey(41));
+        System.out.println(map.containsValue("School"));
+        System.out.println(map.get(13));
+        System.out.println(map.remove(31)+","+map);
+        System.out.println(map.equals(maps));
+        map.clear();
+        System.out.println(map);
+        System.out.println(map.isEmpty());
+        
+	}
+
+}
